@@ -1,0 +1,1 @@
+Wrzuć całą zawartość ZIP-a do repozytorium GitHub i w Settings > Pages wybierz branch main oraz /(root).

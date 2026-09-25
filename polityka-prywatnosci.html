@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Polityka prywatności — Beauty Nails Kraków</title>
+  <meta name="description" content="Polityka prywatności salonu Beauty Nails w Krakowie. Informacje o przetwarzaniu danych osobowych, plikach cookies i prawach osób, których dane dotyczą.">
+  <meta name="theme-color" content="#271f11">
+  <link rel="canonical" href="https://beautynails.pl/polityka-prywatnosci.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #342b40;
+      --secondary: #483b4e;
+      --accent: #967e54;
+      --background: #271f11;
+      --text: #f7eeee;
+      --bg-soft: #302719;
+      --bg-warm: #392d1c;
+      --cream-muted: #d8cec2;
+      --gold-light: #c5ad81;
+      --line: rgba(247, 238, 238, .16);
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", sans-serif;
+      --page-gutter: clamp(1.25rem, 6vw, 6.5rem);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 10;
+      pointer-events: none;
+      opacity: .12;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E");
+      mix-blend-mode: soft-light;
+    }
+    ::selection { background: var(--accent); color: white; }
+    ::-webkit-scrollbar { width: 9px; }
+    ::-webkit-scrollbar-track { background: var(--background); }
+    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 100;
+      padding: 1.2rem var(--page-gutter);
+      transition: background .35s ease, padding .35s ease, border-color .35s ease;
+      border-bottom: 1px solid var(--line);
+    }
+    .site-header.scrolled {
+      padding-top: .8rem;
+      padding-bottom: .8rem;
+      background: rgba(39, 31, 17, .84);
+      backdrop-filter: blur(16px);
+      border-color: var(--line);
+    }
+    .nav-wrap { display: flex; align-items: center; justify-content: space-between; gap: 2rem; max-width: 1440px; margin: auto; }
+    .brand { display: inline-flex; align-items: center; gap: .7rem; font-family: var(--serif); font-size: 1.45rem; letter-spacing: .02em; white-space: nowrap; }
+    .brand-mark { display: grid; place-items: center; width: 32px; height: 32px; border: 1px solid var(--gold-light); border-radius: 50%; color: var(--gold-light); font-size: .9rem; font-style: italic; }
+    .nav-links { display: flex; align-items: center; gap: clamp(1.2rem, 3vw, 2.6rem); list-style: none; margin: 0; padding: 0; }
+    .nav-links a { color: rgba(247,238,238,.78); font-size: .76rem; letter-spacing: .1em; text-transform: uppercase; transition: color .25s; }
+    .nav-links a:hover { color: var(--gold-light); }
+    .nav-cta, .button {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .75rem;
+      min-height: 49px;
+      padding: .8rem 1.35rem;
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: #fffaf1;
+      font-size: .76rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      overflow: hidden;
+      isolation: isolate;
+      transition: color .3s, transform .3s, box-shadow .3s;
+    }
+    .nav-cta::before, .button::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      transform: translateX(-102%);
+      background: var(--primary);
+      transition: transform .38s cubic-bezier(.7,0,.2,1);
+    }
+    .nav-cta:hover::before, .button:hover::before { transform: translateX(0); }
+    .nav-cta:hover, .button:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(150,126,84,.23); }
+    .menu-toggle { display: none; border: 0; background: transparent; color: var(--text); font-size: 1.5rem; cursor: pointer; }
+    .eyebrow { display: flex; align-items: center; gap: .8rem; color: var(--gold-light); font-size: .69rem; letter-spacing: .23em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 34px; height: 1px; background: var(--accent); }
+    .section { padding: clamp(6rem, 11vw, 10rem) var(--page-gutter); }
+    .section-inner { max-width: 1260px; margin: 0 auto; }
+    .section-title { margin: 1.2rem 0 0; font-family: var(--serif); font-size: clamp(2.8rem, 5.3vw, 5.4rem); font-weight: 400; letter-spacing: -.045em; line-height: 1.07; }
+    .section-title em { color: var(--gold-light); font-weight: 400; }
+    .footer { padding: 2rem var(--page-gutter); background: #1f190f; border-top: 1px solid var(--line); }
+    .footer-inner { max-width: 1440px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+    .footer small { color: rgba(247,238,238,.48); font-size: .7rem; }
+    .footer-links { display: flex; gap: 1.4rem; }
+    .footer-links a { color: rgba(247,238,238,.63); font-size: .72rem; transition: color .2s; }
+    .footer-links a:hover { color: var(--gold-light); }
+    .policy-hero {
+      padding: 170px var(--page-gutter) 4.5rem;
+      background:
+        radial-gradient(ellipse at 24% 58%, rgba(72,59,78,.42), transparent 35%),
+        linear-gradient(115deg, #271f11 0%, #2c2418 51%, #30271f 100%);
+    }
+    .policy-hero-inner { max-width: 1260px; margin: auto; }
+    .policy-hero .section-title { max-width: 900px; font-size: clamp(3rem, 7vw, 6rem); }
+    .policy-hero p { max-width: 570px; margin: 1.4rem 0 0; color: rgba(247,238,238,.7); }
+    .policy-section { padding: 4.5rem var(--page-gutter) 7rem; background: var(--bg-soft); }
+    .policy-content { max-width: 900px; margin: 0 auto; }
+    .policy-content > p, .policy-content li { color: rgba(247,238,238,.72); }
+    .policy-content a { color: var(--gold-light); text-decoration: underline; text-underline-offset: 3px; }
+    .policy-content a:hover { color: white; }
+    .policy-content h2 {
+      margin: 3rem 0 1rem;
+      padding-top: 1.4rem;
+      border-top: 1px solid var(--line);
+      color: var(--text);
+      font: 400 clamp(1.65rem, 3vw, 2.25rem)/1.25 var(--serif);
+      letter-spacing: -.025em;
+    }
+    .policy-content h3 { margin: 1.6rem 0 .5rem; color: var(--gold-light); font: 500 1.15rem/1.4 var(--serif); }
+    .policy-content p { margin: .8rem 0; }
+    .policy-content ul { padding-left: 1.35rem; }
+    .policy-content li { margin: .45rem 0; padding-left: .2rem; }
+    .policy-note { margin-top: 2.5rem; padding: 1.2rem 1.4rem; border-left: 2px solid var(--accent); background: rgba(72,59,78,.2); color: rgba(247,238,238,.68); font-size: .88rem; }
+    @media (max-width: 900px) {
+      .nav-links { gap: 1rem; }
+      .nav-links a { font-size: .67rem; }
+      .nav-cta { display: none; }
+    }
+    @media (max-width: 680px) {
+      html { scroll-padding-top: 70px; }
+      .site-header { padding: .85rem 1.25rem; }
+      .nav-wrap { gap: 1rem; }
+      .brand { font-size: 1.3rem; }
+      .menu-toggle { display: block; position: relative; z-index: 2; }
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: .5rem 1.25rem 1.2rem;
+        background: rgba(39,31,17,.97);
+        border-bottom: 1px solid var(--line);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-8px);
+        transition: opacity .25s, transform .25s, visibility .25s;
+      }
+      .nav-links.open { opacity: 1; visibility: visible; transform: translateY(0); }
+      .nav-links li { border-bottom: 1px solid rgba(247,238,238,.08); }
+      .nav-links a { display: block; padding: .8rem 0; font-size: .75rem; }
+      .policy-hero { padding: 135px 1.25rem 3.5rem; }
+      .policy-section { padding: 3.5rem 1.25rem 5rem; }
+      .policy-content h2 { margin-top: 2.3rem; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+      .footer-links { flex-wrap: wrap; gap: .75rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav-wrap" aria-label="Nawigacja główna">
+      <a class="brand" href="index.html" aria-label="Beauty Nails — strona główna"><span class="brand-mark">B</span>Beauty Nails</a>
+      <button class="menu-toggle" aria-label="Otwórz menu" aria-expanded="false" type="button">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html#about">O mnie</a></li>
+        <li><a href="index.html#services">Usługi</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="index.html#contact">Kontakt</a></li>
+      </ul>
+      <a class="nav-cta" href="index.html#contact">Umów wizytę <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="policy-hero" aria-labelledby="policy-title">
+      <div class="policy-hero-inner">
+        <span class="eyebrow">Beauty Nails · Kraków</span>
+        <h1 class="section-title" id="policy-title">Polityka <em>prywatności.</em></h1>
+        <p>Informacje o tym, jak przetwarzamy dane osobowe w związku z wizytami w salonie i korzystaniem ze strony internetowej.</p>
+      </div>
+    </section>
+
+    <section class="policy-section">
+      <article class="policy-content">
+        <p>Niniejsza polityka wyjaśnia zasady przetwarzania danych osobowych przez Beauty Nails, salon manicure i pedicure w Krakowie. Stosujemy przepisy rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 („RODO”) oraz właściwe przepisy prawa polskiego.</p>
+
+        <h2>1. Administrator danych osobowych</h2>
+        <p>Administratorem danych osobowych jest Anna, właścicielka salonu Beauty Nails, prowadzącego działalność pod marką Beauty Nails, z adresem: ul. Karmelicka 12, 31-128 Kraków. Kontakt z administratorem jest możliwy telefonicznie pod numerem <a href="tel:+48823543243">+48 823 543 243</a> lub korespondencyjnie na wskazany adres salonu.</p>
+        <p>Administrator nie wyznaczył inspektora ochrony danych. W sprawach dotyczących danych osobowych prosimy o kontakt z administratorem, korzystając z powyższych danych.</p>
+
+        <h2>2. Cele i podstawy przetwarzania</h2>
+        <p>Przetwarzamy wyłącznie dane niezbędne do określonych celów. W zależności od sytuacji podstawą przetwarzania może być:</p>
+        <ul>
+          <li>art. 6 ust. 1 lit. b RODO — podjęcie działań przed zawarciem umowy oraz realizacja umowy o usługę, w tym ustalenie, potwierdzenie i obsługa terminu wizyty;</li>
+          <li>art. 6 ust. 1 lit. c RODO — wypełnienie obowiązków prawnych, w szczególności obowiązków podatkowych i rachunkowych;</li>
+          <li>art. 6 ust. 1 lit. f RODO — prawnie uzasadniony interes administratora, na przykład prowadzenie korespondencji, ustalanie lub dochodzenie roszczeń i obrona przed nimi, a także zapewnienie bezpieczeństwa i prawidłowego działania strony;</li>
+          <li>art. 6 ust. 1 lit. a RODO — zgoda, jeżeli jest wymagana dla konkretnego celu, na przykład w przypadku dobrowolnej zgody na otrzymywanie informacji marketingowych.</li>
+        </ul>
+        <p>W związku z umówieniem i wykonaniem usługi możemy przetwarzać dane kontaktowe oraz informacje potrzebne do organizacji wizyty, takie jak imię, numer telefonu, wybrana usługa i uzgodniony termin. Podanie danych potrzebnych do umówienia wizyty jest dobrowolne, ale może być niezbędne do jej ustalenia lub realizacji.</p>
+        <p>Prosimy, aby nie przekazywać w wiadomościach informacji o zdrowiu, alergiach ani innych danych szczególnych kategorii, jeśli nie jest to konieczne. Jeżeli przekazanie takich informacji okaże się niezbędne, administrator będzie je przetwarzać tylko w zakresie i na podstawie dopuszczonej przez RODO, w tym — gdy wymaga tego prawo — po uzyskaniu wyraźnej zgody.</p>
+        <p>Formularz widoczny na stronie w obecnej wersji nie wysyła wpisanych danych do salonu ani nie zapisuje ich na serwerze: jego działanie odbywa się w przeglądarce użytkownika. W celu umówienia wizyty prosimy o kontakt telefoniczny.</p>
+
+        <h2>3. Odbiorcy danych</h2>
+        <p>Dane mogą być udostępniane wyłącznie podmiotom, które potrzebują ich do realizacji wskazanych celów, w szczególności dostawcom usług księgowych, informatycznych, hostingowych lub telekomunikacyjnych — jeśli są wykorzystywani przez administratora — oraz uprawnionym organom publicznym, gdy wymagają tego przepisy prawa. Podmioty przetwarzające działają na podstawie odpowiednich umów i zgodnie z poleceniami administratora.</p>
+        <p>Strona korzysta z zewnętrznego zasobu Google Fonts do pobierania krojów pisma. Podczas połączenia z serwerami dostawcy mogą być przetwarzane dane techniczne, takie jak adres IP, dane przeglądarki i informacje o połączeniu. Dostawcą usługi jest Google Ireland Limited, a w określonych sytuacjach dane mogą być przetwarzane przez podmioty z grupy Google poza Europejskim Obszarem Gospodarczym. W przypadku transferu poza EOG stosowane są mechanizmy przewidziane w RODO, o ile mają zastosowanie.</p>
+        <p>Dane nie są sprzedawane. Administrator nie podejmuje wobec użytkowników decyzji w sposób wyłącznie zautomatyzowany, w tym nie stosuje profilowania wywołującego skutki prawne lub podobnie istotne skutki.</p>
+
+        <h2>4. Prawa osób, których dane dotyczą</h2>
+        <p>W granicach określonych przez RODO przysługuje Ci prawo do:</p>
+        <ul>
+          <li>dostępu do danych i otrzymania ich kopii;</li>
+          <li>sprostowania danych nieprawidłowych lub uzupełnienia danych niekompletnych;</li>
+          <li>usunięcia danych, ograniczenia ich przetwarzania lub wniesienia sprzeciwu wobec przetwarzania opartego na prawnie uzasadnionym interesie;</li>
+          <li>przenoszenia danych — w zakresie przewidzianym w art. 20 RODO;</li>
+          <li>wycofania zgody w dowolnym momencie, jeżeli przetwarzanie odbywa się na podstawie zgody. Wycofanie zgody nie wpływa na zgodność z prawem przetwarzania sprzed jej wycofania;</li>
+          <li>wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych, jeżeli uznasz, że przetwarzanie narusza przepisy o ochronie danych osobowych.</li>
+        </ul>
+        <p>Aby skorzystać ze swoich praw, skontaktuj się z administratorem telefonicznie lub pisemnie na adres salonu. W celu ochrony danych administrator może poprosić o informacje potrzebne do potwierdzenia Twojej tożsamości. Zakres niektórych praw może być ograniczony, jeżeli dalsze przechowywanie danych jest wymagane przepisami prawa albo niezbędne do ustalenia, dochodzenia lub obrony roszczeń.</p>
+
+        <h2>5. Pliki cookies i podobne technologie</h2>
+        <p>Cookies to niewielkie informacje tekstowe zapisywane na urządzeniu użytkownika przez przeglądarkę. Mogą być wykorzystywane do prawidłowego działania strony, zapamiętywania ustawień lub — jeśli takie narzędzia zostaną wdrożone — do celów statystycznych bądź marketingowych.</p>
+        <p>Strona nie jest opisana jako wykorzystująca narzędzia analityczne ani reklamowe zapisujące cookies. Przeglądarka może jednak obsługiwać cookies techniczne związane z korzystaniem ze strony lub zasobami zewnętrznymi. Połączenie z usługą Google Fonts może wiązać się z przetwarzaniem danych technicznych; samo pobieranie fontów nie oznacza, że salon zapisuje własne pliki cookies analityczne.</p>
+        <p>Ustawienia dotyczące cookies możesz zmienić w przeglądarce, w tym zablokować lub usunąć zapisane pliki. Ograniczenie cookies może wpłynąć na działanie niektórych funkcji strony. Jeżeli w przyszłości zostaną wdrożone opcjonalne technologie wymagające zgody, będą uruchamiane zgodnie z obowiązującymi przepisami.</p>
+
+        <h2>6. Okres przechowywania danych</h2>
+        <p>Dane przechowujemy tylko tak długo, jak jest to potrzebne do celu, w którym zostały zebrane, a następnie przez okres wymagany prawem lub niezbędny do zabezpieczenia ewentualnych roszczeń. W szczególności:</p>
+        <ul>
+          <li>dane związane z zapytaniem lub umówieniem wizyty — przez czas obsługi sprawy, a następnie przez okres potrzebny do wykazania przebiegu ustaleń lub obrony przed roszczeniami;</li>
+          <li>dane zawarte w dokumentacji podatkowej i rachunkowej — przez okres wynikający z właściwych przepisów, co do zasady przez 5 lat, liczonych zgodnie z zasadami określonymi w tych przepisach;</li>
+          <li>dane przetwarzane na podstawie zgody — do czasu jej wycofania lub ustania celu przetwarzania, z uwzględnieniem ewentualnych obowiązków prawnych i roszczeń;</li>
+          <li>dane techniczne i logi związane z bezpieczeństwem strony — przez okres uzasadniony zapewnieniem jej prawidłowego i bezpiecznego działania.</li>
+        </ul>
+
+        <h2>7. Zmiany polityki prywatności</h2>
+        <p>Polityka może być aktualizowana, gdy zmienią się przepisy, sposób działania strony lub zasady świadczenia usług. Aktualna wersja jest publikowana na tej stronie.</p>
+
+        <div class="policy-note">W sprawach związanych z umówieniem wizyty skontaktuj się z salonem Beauty Nails pod numerem <a href="tel:+48823543243">+48 823 543 243</a> albo odwiedź nas przy ul. Karmelickiej 12 w Krakowie.</div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">B</span>Beauty Nails</a>
+      <small>© <span id="year">2026</span> Beauty Nails · Z troską, Anna.</small>
+      <div class="footer-links">
+        <a href="index.html#services">Usługi</a>
+        <a href="index.html#contact">Kontakt</a>
+        <a href="regulamin.html">Regulamin</a>
+        <a href="polityka-prywatnosci.html" aria-current="page">Polityka prywatności</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.querySelector('.site-header');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 24);
+    window.addEventListener('scroll', updateHeader, { passive: true });
+    updateHeader();
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Zamknij menu' : 'Otwórz menu');
+      menuToggle.textContent = isOpen ? '×' : '☰';
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Otwórz menu');
+      menuToggle.textContent = '☰';
+    }));
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

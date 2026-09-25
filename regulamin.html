@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regulamin — Beauty Nails Kraków</title>
+  <meta name="description" content="Regulamin serwisu internetowego i świadczenia usług przez Beauty Nails w Krakowie.">
+  <meta name="theme-color" content="#271f11">
+  <link rel="canonical" href="https://beautynails.pl/regulamin.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #342b40;
+      --secondary: #483b4e;
+      --accent: #967e54;
+      --background: #271f11;
+      --text: #f7eeee;
+      --bg-soft: #302719;
+      --bg-warm: #392d1c;
+      --cream-muted: #d8cec2;
+      --gold-light: #c5ad81;
+      --line: rgba(247, 238, 238, .16);
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", sans-serif;
+      --page-gutter: clamp(1.25rem, 6vw, 6.5rem);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 10;
+      pointer-events: none;
+      opacity: .12;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E");
+      mix-blend-mode: soft-light;
+    }
+    ::selection { background: var(--accent); color: white; }
+    ::-webkit-scrollbar { width: 9px; }
+    ::-webkit-scrollbar-track { background: var(--background); }
+    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea { font: inherit; }
+    img { display: block; max-width: 100%; }
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 100;
+      padding: 1.2rem var(--page-gutter);
+      transition: background .35s ease, padding .35s ease, border-color .35s ease;
+      border-bottom: 1px solid var(--line);
+    }
+    .site-header.scrolled {
+      padding-top: .8rem;
+      padding-bottom: .8rem;
+      background: rgba(39, 31, 17, .84);
+      backdrop-filter: blur(16px);
+      border-color: var(--line);
+    }
+    .nav-wrap { display: flex; align-items: center; justify-content: space-between; gap: 2rem; max-width: 1440px; margin: auto; }
+    .brand { display: inline-flex; align-items: center; gap: .7rem; font-family: var(--serif); font-size: 1.45rem; letter-spacing: .02em; white-space: nowrap; }
+    .brand-mark { display: grid; place-items: center; width: 32px; height: 32px; border: 1px solid var(--gold-light); border-radius: 50%; color: var(--gold-light); font-size: .9rem; font-style: italic; }
+    .nav-links { display: flex; align-items: center; gap: clamp(1.2rem, 3vw, 2.6rem); list-style: none; margin: 0; padding: 0; }
+    .nav-links a { color: rgba(247,238,238,.78); font-size: .76rem; letter-spacing: .1em; text-transform: uppercase; transition: color .25s; }
+    .nav-links a:hover { color: var(--gold-light); }
+    .nav-cta, .button {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .75rem;
+      min-height: 49px;
+      padding: .8rem 1.35rem;
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: #fffaf1;
+      font-size: .76rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      overflow: hidden;
+      isolation: isolate;
+      transition: color .3s, transform .3s, box-shadow .3s;
+    }
+    .nav-cta::before, .button::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      transform: translateX(-102%);
+      background: var(--primary);
+      transition: transform .38s cubic-bezier(.7,0,.2,1);
+    }
+    .nav-cta:hover::before, .button:hover::before { transform: translateX(0); }
+    .nav-cta:hover, .button:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(150,126,84,.23); }
+    .menu-toggle { display: none; border: 0; background: transparent; color: var(--text); font-size: 1.5rem; cursor: pointer; }
+    .eyebrow { display: flex; align-items: center; gap: .8rem; color: var(--gold-light); font-size: .69rem; letter-spacing: .23em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 34px; height: 1px; background: var(--accent); }
+    .section { padding: clamp(6rem, 11vw, 10rem) var(--page-gutter); }
+    .section-inner { max-width: 1260px; margin: 0 auto; }
+    .section-title { margin: 1.2rem 0 0; font-family: var(--serif); font-size: clamp(2.8rem, 5.3vw, 5.4rem); font-weight: 400; letter-spacing: -.045em; line-height: 1.07; }
+    .section-title em { color: var(--gold-light); font-weight: 400; }
+    .footer { padding: 2rem var(--page-gutter); background: #1f190f; border-top: 1px solid var(--line); }
+    .footer-inner { max-width: 1440px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+    .footer small { color: rgba(247,238,238,.48); font-size: .7rem; }
+    .footer-links { display: flex; gap: 1.4rem; }
+    .footer-links a { color: rgba(247,238,238,.63); font-size: .72rem; transition: color .2s; }
+    .footer-links a:hover { color: var(--gold-light); }
+
+    .legal-hero {
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 430px;
+      padding: 150px var(--page-gutter) 75px;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 24% 58%, rgba(72,59,78,.42), transparent 35%),
+        linear-gradient(115deg, #271f11 0%, #2c2418 51%, #30271f 100%);
+    }
+    .legal-hero-inner { width: 100%; max-width: 1260px; margin: 0 auto; }
+    .legal-hero h1 {
+      margin: 1.2rem 0 1rem;
+      font-family: var(--serif);
+      font-size: clamp(3.5rem, 8vw, 6.5rem);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -.055em;
+    }
+    .legal-hero h1 em { color: var(--gold-light); font-weight: 400; }
+    .legal-hero p { max-width: 650px; margin: 0; color: rgba(247,238,238,.73); }
+    .legal-content { background: var(--bg-soft); }
+    .legal-layout { max-width: 1040px; margin: 0 auto; }
+    .legal-updated { margin: 0 0 2rem; color: var(--gold-light); font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; }
+    .legal-section { padding: 2.2rem 0; border-top: 1px solid var(--line); scroll-margin-top: 100px; }
+    .legal-section h2 {
+      margin: 0 0 1rem;
+      color: var(--text);
+      font-family: var(--serif);
+      font-size: clamp(1.7rem, 3vw, 2.35rem);
+      font-weight: 400;
+      letter-spacing: -.025em;
+    }
+    .legal-section h3 { margin: 1.6rem 0 .5rem; color: var(--gold-light); font-family: var(--serif); font-size: 1.25rem; font-weight: 400; }
+    .legal-section p, .legal-section li { color: rgba(247,238,238,.72); }
+    .legal-section p { margin: .65rem 0; }
+    .legal-section ol, .legal-section ul { padding-left: 1.35rem; }
+    .legal-section li { padding-left: .25rem; margin: .45rem 0; }
+    .legal-section a { color: var(--gold-light); text-decoration: underline; text-underline-offset: 3px; }
+    .legal-contact { color: var(--cream-muted); }
+    .back-link { display: inline-flex; align-items: center; gap: .7rem; margin-top: 1.3rem; color: var(--cream-muted); font-size: .82rem; transition: gap .25s, color .25s; }
+    .back-link:hover { gap: 1rem; color: white; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+    @media (max-width: 900px) {
+      .nav-links { gap: 1rem; }
+      .nav-links a { font-size: .67rem; }
+      .nav-cta { display: none; }
+    }
+    @media (max-width: 680px) {
+      html { scroll-padding-top: 70px; }
+      .site-header { padding: .85rem 1.25rem; }
+      .nav-wrap { gap: 1rem; }
+      .brand { font-size: 1.3rem; }
+      .menu-toggle { display: block; position: relative; z-index: 2; }
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: .5rem 1.25rem 1.2rem;
+        background: rgba(39,31,17,.97);
+        border-bottom: 1px solid var(--line);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-8px);
+        transition: opacity .25s, transform .25s, visibility .25s;
+      }
+      .nav-links.open { opacity: 1; visibility: visible; transform: translateY(0); }
+      .nav-links li { border-bottom: 1px solid rgba(247,238,238,.08); }
+      .nav-links a { display: block; padding: .8rem 0; font-size: .75rem; }
+      .legal-hero { min-height: 390px; padding: 135px 1.25rem 4rem; }
+      .section { padding: 5.5rem 1.25rem; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+      .footer-links { flex-wrap: wrap; gap: .8rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav-wrap" aria-label="Nawigacja główna">
+      <a class="brand" href="index.html" aria-label="Beauty Nails — strona główna"><span class="brand-mark">B</span>Beauty Nails</a>
+      <button class="menu-toggle" aria-label="Otwórz menu" aria-expanded="false" type="button">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html#about">O mnie</a></li>
+        <li><a href="index.html#services">Usługi</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="index.html#contact">Kontakt</a></li>
+      </ul>
+      <a class="nav-cta" href="index.html#contact">Umów wizytę <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="legal-hero" aria-labelledby="page-title">
+      <div class="legal-hero-inner">
+        <span class="eyebrow">Beauty Nails · Kraków</span>
+        <h1 id="page-title">Reguły<br><em>wspólnej troski.</em></h1>
+        <p>Regulamin korzystania z serwisu internetowego oraz zasady umawiania i świadczenia usług w salonie Beauty Nails.</p>
+        <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Wróć na stronę główną</a>
+      </div>
+    </section>
+
+    <section class="section legal-content" aria-label="Treść regulaminu">
+      <div class="legal-layout">
+        <p class="legal-updated">Obowiązuje od 25 września 2026 r.</p>
+
+        <section class="legal-section" id="postanowienia-ogolne">
+          <h2>1. Postanowienia ogólne i korzystanie z serwisu</h2>
+          <p>Regulamin określa zasady korzystania z serwisu internetowego Beauty Nails oraz zasady umawiania i świadczenia usług kosmetycznych oferowanych przez salon Beauty Nails, ul. Karmelicka 12, 31-128 Kraków. Kontakt z salonem jest możliwy telefonicznie pod numerem <a href="tel:+48823543243">+48 823 543 243</a>.</p>
+          <p>Usługodawcą jest salon działający pod nazwą Beauty Nails, dalej „Salon”. Usługi świadczone są w zakresie przedstawionym na stronie, w szczególności manicure, pedicure oraz pielęgnacji dłoni. Regulamin jest udostępniony nieodpłatnie w sposób umożliwiający jego odczytanie i zapisanie.</p>
+          <p>Serwis ma charakter informacyjny. Cennik i opisy usług przedstawiają aktualną ofertę, a formularz kontaktowy służy do przesłania zapytania o kontakt lub termin. Samo wysłanie formularza nie oznacza zawarcia umowy ani potwierdzenia rezerwacji. Termin zostaje uzgodniony po potwierdzeniu przez Salon.</p>
+          <p>Korzystający z serwisu zobowiązuje się używać go zgodnie z prawem i nie podejmować działań, które zakłócają jego działanie lub naruszają prawa innych osób. Do korzystania z serwisu potrzebne są urządzenie z dostępem do Internetu i aktualna przeglądarka internetowa.</p>
+        </section>
+
+        <section class="legal-section" id="uslugi">
+          <h2>2. Zasady świadczenia usług</h2>
+          <ol>
+            <li>Wizytę można uzgodnić telefonicznie lub za pomocą formularza kontaktowego na stronie. Salon kontaktuje się w celu ustalenia dostępności i szczegółów. Rezerwacja jest uzgodniona dopiero po potwierdzeniu terminu przez Salon.</li>
+            <li>Przed rozpoczęciem zabiegu Salon omawia z klientem wybraną usługę, jej zakres, cenę oraz przewidywany czas trwania. Usługi dodatkowe lub zmiany zakresu są wykonywane po uzgodnieniu z klientem.</li>
+            <li>Ceny są podawane w złotych polskich. Klient otrzymuje informację o cenie przed rozpoczęciem usługi. Jeżeli w trakcie wizyty okaże się, że potrzebny jest dodatkowy zakres lub koszt, zostanie on wcześniej uzgodniony z klientem.</li>
+            <li>Klient powinien poinformować przed zabiegiem o istotnych przeciwwskazaniach, alergiach, nadwrażliwości, infekcjach, uszkodzeniach skóry lub paznokci oraz o innych okolicznościach mogących mieć znaczenie dla bezpieczeństwa zabiegu. Salon może odmówić wykonania zabiegu lub zaproponować jego zmianę, jeżeli w danych okolicznościach jego wykonanie mogłoby być niebezpieczne albo niewłaściwe.</li>
+            <li>Usługi mają charakter kosmetyczny i pielęgnacyjny. Nie zastępują konsultacji lekarskiej, diagnozy ani leczenia. W razie wątpliwości dotyczących stanu zdrowia klient powinien skonsultować się z odpowiednim specjalistą.</li>
+            <li>Salon wykonuje usługi z zachowaniem wymaganej higieny i zasad bezpieczeństwa. Klient zobowiązany jest stosować się do uzasadnionych wskazówek dotyczących przebiegu zabiegu.</li>
+            <li>Klient proszony jest o punktualne przybycie. W przypadku spóźnienia Salon może, po uzgodnieniu z klientem, skrócić zakres usługi albo zaproponować inny termin, jeżeli opóźnienie uniemożliwia prawidłowe wykonanie umówionego zabiegu.</li>
+            <li>Wizytę można przełożyć lub odwołać, kontaktując się z Salonem telefonicznie. Prosimy o możliwie wczesną informację. Brak odrębnego uzgodnienia nie oznacza automatycznego obowiązku zapłaty opłaty za odwołanie wizyty.</li>
+          </ol>
+        </section>
+
+        <section class="legal-section" id="prawa-obowiazki">
+          <h2>3. Prawa i obowiązki stron</h2>
+          <h3>Salon zobowiązuje się do:</h3>
+          <ul>
+            <li>świadczenia uzgodnionych usług z należytą starannością, w zakresie i terminie potwierdzonym z klientem;</li>
+            <li>przekazania przed zabiegiem informacji o jego zakresie, cenie oraz istotnych okolicznościach wykonania;</li>
+            <li>przestrzegania właściwych przepisów prawa i zasad higieny dotyczących prowadzonej działalności;</li>
+            <li>rozpatrywania zgłoszeń i reklamacji na zasadach określonych w niniejszym Regulaminie i obowiązujących przepisach.</li>
+          </ul>
+          <h3>Klient zobowiązuje się do:</h3>
+          <ul>
+            <li>podania informacji istotnych dla bezpiecznego wykonania wybranej usługi;</li>
+            <li>uzgodnienia z Salonem ewentualnej zmiany zakresu zabiegu oraz poinformowania o potrzebie przełożenia lub odwołania wizyty;</li>
+            <li>uiszczenia uzgodnionej ceny za wykonaną usługę.</li>
+          </ul>
+          <p>Klient ma prawo do uzyskania informacji o usłudze i jej cenie, zadawania pytań oraz odmowy wykonania zabiegu lub przerwania go. Salon może odmówić wykonania albo przerwać usługę, jeżeli jej wykonanie byłoby niezgodne z prawem, stwarzałoby uzasadnione ryzyko dla zdrowia lub bezpieczeństwa albo gdy klient nie współpracuje w sposób niezbędny do bezpiecznego przeprowadzenia zabiegu. Salon poinformuje o przyczynie w zakresie, w jakim jest to możliwe.</p>
+          <p>Jeżeli umowa o usługę zostaje zawarta na odległość lub poza lokalem przedsiębiorstwa, klient będący konsumentem może mieć ustawowe prawo odstąpienia od umowy w terminie 14 dni, zgodnie z ustawą o prawach konsumenta. Jeżeli klient wyraźnie zażąda rozpoczęcia usługi przed upływem tego terminu, a następnie odstąpi od umowy po rozpoczęciu jej wykonywania, może być zobowiązany do zapłaty za świadczenia spełnione do chwili odstąpienia, na zasadach określonych w ustawie. Prawo odstąpienia po pełnym wykonaniu usługi wygasa tylko wtedy, gdy spełniono ustawowe warunki, w tym uzyskano uprzednią wyraźną zgodę klienta i potwierdzenie przyjęcia do wiadomości utraty tego prawa. Zasady te nie ograniczają praw konsumenta wynikających z bezwzględnie obowiązujących przepisów.</p>
+        </section>
+
+        <section class="legal-section" id="reklamacje">
+          <h2>4. Reklamacje</h2>
+          <p>Klient może złożyć reklamację dotyczącą wykonanej usługi lub działania serwisu. Reklamację można zgłosić telefonicznie pod numerem <a href="tel:+48823543243">+48 823 543 243</a> albo osobiście w Salonie przy ul. Karmelickiej 12 w Krakowie. Dla sprawniejszego rozpatrzenia warto opisać, czego dotyczy zgłoszenie, kiedy wykonano usługę i jakiego rozwiązania oczekuje klient. Podanie danych kontaktowych ułatwi udzielenie odpowiedzi.</p>
+          <p>Salon rozpatruje reklamację w rozsądnym terminie i udziela odpowiedzi w sposób pozwalający klientowi zapoznać się z jej treścią. W przypadku reklamacji konsumenta termin odpowiedzi wynosi 14 dni, jeżeli obowiązek odpowiedzi w tym terminie wynika z obowiązujących przepisów, w szczególności art. 7a ustawy o prawach konsumenta. W przypadkach objętych tym przepisem brak odpowiedzi w ustawowym terminie wywołuje skutki przewidziane w ustawie.</p>
+          <p>Reklamacja nie ogranicza ustawowych praw klienta, w tym praw konsumenta wynikających z przepisów o zgodności świadczenia z umową. Zgłoszenie reklamacji nie wymaga użycia określonego formularza ani zachowania szczególnej formy, o ile przepisy prawa nie stanowią inaczej.</p>
+          <p>Konsument może również skorzystać z pomocy miejskiego lub powiatowego rzecznika konsumentów albo zwrócić się do właściwego wojewódzkiego inspektoratu Inspekcji Handlowej w sprawie możliwości pozasądowego rozwiązania sporu. Udział w postępowaniu pozasądowym jest co do zasady dobrowolny. Informacje o pomocy konsumenckiej publikuje Urząd Ochrony Konkurencji i Konsumentów.</p>
+        </section>
+
+        <section class="legal-section" id="dane-osobowe">
+          <h2>5. Dane osobowe</h2>
+          <p>Zasady przetwarzania danych osobowych związanych z korzystaniem z serwisu, wysłaniem zapytania oraz kontaktem z Salonem opisuje <a href="polityka-prywatnosci.html">Polityka prywatności</a>. Dane przekazane w celu uzgodnienia wizyty są wykorzystywane w zakresie potrzebnym do obsługi zapytania i organizacji usługi, zgodnie z obowiązującymi przepisami.</p>
+        </section>
+
+        <section class="legal-section" id="postanowienia-koncowe">
+          <h2>6. Postanowienia końcowe</h2>
+          <p>W sprawach nieuregulowanych Regulaminem stosuje się prawo polskie, w szczególności przepisy Kodeksu cywilnego oraz ustawy o prawach konsumenta. Żadne postanowienie Regulaminu nie wyłącza ani nie ogranicza praw przyznanych konsumentom przez bezwzględnie obowiązujące przepisy prawa.</p>
+          <p>Salon może zmienić Regulamin z ważnych przyczyn, w szczególności w razie zmiany przepisów, zakresu działalności lub sposobu funkcjonowania serwisu. Zmiany będą publikowane na tej stronie i obowiązują od chwili ich udostępnienia, z zastrzeżeniem praw nabytych oraz postanowień umów zawartych wcześniej.</p>
+          <p>Regulamin jest dostępny w serwisie internetowym Beauty Nails. Jeżeli którekolwiek z jego postanowień okaże się nieważne lub bezskuteczne, nie wpływa to na ważność pozostałych postanowień.</p>
+          <p class="legal-contact">Kontakt z Salonem: Beauty Nails, ul. Karmelicka 12, 31-128 Kraków, tel. <a href="tel:+48823543243">+48 823 543 243</a>.</p>
+          <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Wróć na stronę główną</a>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">B</span>Beauty Nails</a>
+      <small>© <span id="year">2026</span> Beauty Nails · Z troską, Anna.</small>
+      <div class="footer-links">
+        <a href="index.html#services">Usługi</a>
+        <a href="index.html#contact">Kontakt</a>
+        <a href="regulamin.html">Regulamin</a>
+        <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.querySelector('.site-header');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 24);
+    window.addEventListener('scroll', updateHeader, { passive: true });
+    updateHeader();
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Zamknij menu' : 'Otwórz menu');
+      menuToggle.textContent = isOpen ? '×' : '☰';
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Otwórz menu');
+      menuToggle.textContent = '☰';
+    }));
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
